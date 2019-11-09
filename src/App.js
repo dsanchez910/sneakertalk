@@ -40,7 +40,7 @@ class App extends Component {
     }
       <div className="panel panel-default post-editor">
         <div className="panel-body">
-          <textarea className="form-control post-editor-input" onChange={this.handlePostEditorInputChange} />
+          <textarea className="form-control post-editor-input" value={this.state.newPostBody} onChange={this.handlePostEditorInputChange} />
           <button className="btn-success post-editor-button" onClick={this.addPost}>Post</button>
         </div>
       </div>
